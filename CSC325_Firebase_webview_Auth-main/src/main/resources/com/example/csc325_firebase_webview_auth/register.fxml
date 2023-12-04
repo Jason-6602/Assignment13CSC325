@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="467.0" prefWidth="496.0" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.csc325_firebase_webview_auth.modelview.RegisterController">
+    <children>
+        <VBox alignment="TOP_CENTER" layoutX="7.0" prefHeight="166.0" prefWidth="485.0" spacing="10.0">
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+         <children>
+            <Label text="Registration Form:" textAlignment="CENTER">
+               <font>
+                  <Font name="Garamond" size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets top="25.0" />
+               </VBox.margin>
+            </Label>
+            <Label fx:id="errorLabel" textAlignment="CENTER" textFill="RED">
+               <font>
+                  <Font name="Garamond" size="12.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="47.0" prefWidth="465.0">
+               <children>
+                  <Label text="Email: ">
+                     <HBox.margin>
+                        <Insets right="80.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="emailText" />
+               </children>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text=" Name: " textAlignment="CENTER">
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                     <padding>
+                        <Insets right="50.0" />
+                     </padding>
+                  </Label>
+                  <TextField fx:id="fullNameText" />
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label text="Password: ">
+                     <HBox.margin>
+                        <Insets right="55.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Verdana" size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="passwordText" accessibleRole="PASSWORD_FIELD" />
+               </children>
+            </HBox>
+            <Button fx:id="registerButton" mnemonicParsing="false" onAction="#registerButtonClicked" text="Register">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+            <Separator prefWidth="200.0">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Separator>
+            <Label text="Have an acct already?" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Garamond" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="signInButton" mnemonicParsing="false" onAction="#signInButtonClicked" text="Sign In Here">
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+        </VBox>
+    </children>
+    <opaqueInsets>
+        <Insets />
+    </opaqueInsets>
+</AnchorPane>
